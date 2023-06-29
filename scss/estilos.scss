@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(3, 3, 66)
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(5, 12, 121, 0.719);
+    margin-right: auto;
+        
+    li, a {
+    
+            font-weight: 500;
+            font-size: 16px;
+            color: rgb(3, 1, 95);
+            text-decoration: none;
+        }
+    }
+
+.banner{
+        max-width: 100%;
+        height: auto;
+        background-image:(url(../imagenes/boca11.jpg));
+        background-size: cover;
+    }
+
+#nav_links li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+.logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    nav{
+        color: rgba(2, 4, 83, 0.973);
+
+        a {
+            transition: color 0.3s ease;
+            color: rgba(255, 255, 255, 0.945);
+            text-shadow: black;
+            text-transform: uppercase;
+            box-shadow: 3px 3px  yellow;
+        }
+
+        a:hover{
+            color: rgb(251, 255, 9);
+            
+        }
+        }
+
+        
+
+
+
+
+
