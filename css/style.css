@@ -6,27 +6,29 @@
     
 }
 
-li, a {
-
-    font-weight: 500;
-    font-size: 16px;
-    color: aqua;
-    text-decoration: none;
-}
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: rgb(5, 2, 46);
+    background-color: rgba(255, 233, 30, 0.719);
     margin-right: auto;
+
     
 }
 
-
 body{
     background-color: rgb(3, 3, 66)
+}
+
+
+li, a {
+
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(3, 1, 95);
+    text-decoration: none;
 }
 
 .banner{
@@ -35,41 +37,6 @@ body{
     background-image:(url(../imagenes/boca11.jpg));
     background-size: cover;
 }
-
-.historiaboca{
-    display: flex;
-    margin-top: 10px;
-    text-align: center;
-    padding: 35px;
-    padding-left: 20px;
-    margin-right: 5%;
-    
-
-}
-.historiaboca p{
-    color: aliceblue;
-    margin-right: 30px;
-}
-
-.parrafo{
-    background-color: rgba(12, 0, 82, 0.767);
-    margin-left: 20px;
-    box-shadow: 5px 5px 10px rgb(239, 255, 8)  ;
-    overflow: hidden;
-}
-
-.parrafo2{
-    margin-left: 20px;
-    box-shadow: 5px 5px 10px rgb(239, 255, 8)  ;
-    overflow: hidden;
-}
-
-.parrafo3{
-    margin-left: 20px;
-    box-shadow: 5px 5px 10px rgb(239, 255, 8)  ;
-    overflow: hidden;
-}
-
 
 #nav_links li{
     display: inline-block;
@@ -87,89 +54,86 @@ nav{
 
 nav a {
     transition: color 0.3s ease;
-    color: rgba(190, 188, 48, 0.945);
-    text-decoration: none;
+    color: rgba(255, 255, 255, 0.945);
+    text-shadow: black;
+    text-transform: uppercase;
+    box-shadow: 3px 3px  yellow;
 }
 
 nav a:hover{
-    color: rgb(238, 255, 0);
+    color: rgb(36, 69, 253);
     
 }
 
 
-.plantel{
-    display: flex;
-}
-.plantel img{
-    height: 300px;
-    width: 400px;
-    border-radius: 3px;
-    margin-top: 5px;
+.ban1{
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.tarjeta{
-    height: 300px;
-    margin: 50px;
-    box-shadow: 20px 20px 40px rgb(218, 255, 7)  ;
-    overflow: hidden;
+.row h1{
+    margin-top: 20px;
+    color: blue;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 1px 1px yellow;
 }
 
-.intro{
-    height: 70px;
-    width: 350px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 240px;
-    background-color: 27,27,00,00;
-    color: white;
-    transition: .5s;
-}
-h1{
-    margin: 10px;
-    font-size: 40px;
-
+.row p{
+    color: rgb(130, 238, 238);
+    margin-top: 40px;
 }
 
-.plantel p{
-    font-size: 15px;
-    margin: 10px;
-    visibility: hidden;
-    opacity: 0;
-
+.row img{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    box-shadow: 3px 2px 16px 1px rgb(255, 251, 10);
+    
 }
 
-span{
-    font-weight: bold;
-
+.tercercol img{
+    width: 600px;
+    
 }
 
-.tarjeta:hover{
-    cursor: pointer;
+@media screen and (max-width:600px) {
+    
+    .tercercol img{
+        width: 300px;
+    }
+    
 }
 
-.tarjeta:hover .intro{
-    height: 420px;
-    bottom: 540px;
-    background-color: rgba(245, 241, 36, 0.548);
+.segundafila {
+    margin-top: 20px;
 }
 
-.tarjeta:hover p{
-    opacity: 2;
-    visibility: visible;
-    color: aliceblue;
-
+.carousel-item img{
+    width: 700px;
+    
+}
+.gla img{
+    margin-top: 14%;
 }
 
-.tarjeta:hover img{
-    transform: scale(1.1);
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 img{
     width: 100%;
 }
-
-
 
 .boca{
     display: flex;
@@ -179,11 +143,16 @@ img{
 
 .columna{
     flex: 25%;
-    padding: 5px;
+    padding: 4px;
 }
 
 .columna img{
     margin-top: 5px;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    box-shadow: 10px 10px 20px 2px rgb(19, 2, 95);}
 }
 
 footer{
@@ -215,10 +184,12 @@ footer{
     margin: 1rem 1.5rem;
     cursor: pointer;
     opacity: 0.6;
+    color: yellow;
 
 }
 .menu-item{
     opacity: 1;
+    
 }
 
 .copyright{
@@ -231,7 +202,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    background-image: url(../imagenes/plantel.jpg);
 
 }
 
@@ -240,6 +211,9 @@ table{
     font-size: 14px;
     table-layout: fixed;
     border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(32, 35, 73); opacity: 0.9;
+    margin: 20px;
 }
 
 thead {
@@ -250,11 +224,16 @@ th{
     padding: 20px 15px;
     font-weight: 700;
     text-transform: uppercase;
+    color: rgb(81, 81, 95);
+    font-size: 20px;
+    text-shadow: 1px 1px yellow;
 }
 
 td{
     padding: 15px;
     border-bottom: solid 1px rgb(12, 2, 54);
+    text-transform: uppercase;
+    margin: 20px;
 }
 
 .containertabla tr{
@@ -262,7 +241,7 @@ td{
 }
 
 .containertabla tr :hover{
-    background-color: rgb(67, 80, 197);
+    background-color: rgb(67, 80, 197); 
 }
 
 
@@ -393,7 +372,6 @@ table td::before{
     height: 450px;
     overflow: hidden;
     box-shadow: 5px 5px 20px rgb(240, 255, 32);
-  
 }
 
 .single-img :hover{
@@ -403,18 +381,35 @@ table td::before{
     background-image: url(../imagenes/maradona-bocaportada.jpg);
     background-size: cover;
     background-position: center center;
+    transition: transform 0.7s ease;
+    &:hover {
+        transform: scale(1.1);
+    background-image: url(../imagenes/despedidamaradona\ \(1\).jpg);
+    box-shadow: 5px 5px 20px blue;
+    }
 }
 
 .img-two{
     background-image: url(../imagenes/juan\ roman.jpg);
     background-size: cover;
     background-position: center center;
+    transition: transform 0.7s ease;
+    &:hover {
+        transform: scale(1.1);
+        background-image: url(../imagenes/despedidaroman.jpg_large);
+        box-shadow: 5px 5px 20px blue;
+    }
 }
 
 .img-three{
     background-image: url(../imagenes/palermo.jpg);
     background-size: cover;
     background-position: center center;
+    transition: transform 0.7s ease;
+    &:hover {
+        transform: scale(1.1);
+    background-image: url(../imagenes/despedidapalermo.jpg);
+    box-shadow: 5px 5px 20px blue;}
 }
 
 .img-text{
@@ -465,5 +460,35 @@ transform: translate(0,0);
     .img-three{
         margin-top: 50px;
     }
+}
 
+.nombresidolo h1{
+    color: rgb(92, 85, 85);
+    text-shadow: 1px 1px yellow;
+    margin-top: 25px
+}
+
+.nombresidolo img{
+    width: 700px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 20px 2px yellow;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);}
+}
+
+@media screen and (max-width:768px) {
+    .nombresidolo h1{
+        font-size: 15px;
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
+
+    .nombresidolo img{
+        width: 250px;
+    }
+}
