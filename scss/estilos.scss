@@ -102,6 +102,13 @@ header{
 .segundafila {
         margin-top: 20px;}
 
+        @media screen and (max-width:600px) {
+            .segundafila img{
+                height: 100px;
+            }
+            
+        }
+
 .carousel-item img{
         width: 700px;}
 
