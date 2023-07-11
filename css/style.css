@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +17,7 @@ header{
 }
 
 body{
-    background: linear-gradient(rgb(10, 2, 78), hsla(61, 100%, 59%, 0.39),  rgba(4, 1, 78, 0.548), rgb(4, 1, 39))
+    background: linear-gradient(rgb(6, 1, 36), hsla(243, 87%, 12%, 0.932),  rgb(12, 10, 87), rgb(4, 1, 39))
 }
 
 
@@ -36,6 +39,12 @@ li, a {
 #nav_links li{
     display: inline-block;
     padding: 0px 20px;
+}
+
+@media screen and (max-width: 800px) {
+    #nav_links li{
+        display: block;
+    }
 }
 
 .logo{
@@ -66,7 +75,8 @@ nav a:hover{
     margin-right: auto;
 }
 
-.row h1{
+h1{
+    font-family: 'Skranji', cursive;
     margin-top: 20px;
     color: blue;
     text-transform: uppercase;
@@ -77,6 +87,34 @@ nav a:hover{
     &:hover {
         transform: scale(1.1);}
 }
+
+h2{
+    margin-top: 20px;
+    color: rgb(0, 0, 43);
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 3px 3px  rgb(255, 255, 13);}
+
+    h3{
+        margin-top: 20px;
+        color: rgb(122, 122, 145);
+        text-shadow: 1px 1px  rgb(255, 255, 13);}
+
+    h4{
+        margin-top: 20px;
+        color: rgb(122, 122, 145);
+        text-shadow: 1px 1px  rgb(255, 255, 13)
+    }
+    h5{
+        margin-top: 20px;
+        color: rgb(22, 22, 58);
+        text-shadow: 1px 1px  rgb(255, 255, 13)
+    }
+    h6{
+        margin-top: 20px;
+        color: rgb(22, 22, 58);
+        text-shadow: 1px 1px  rgb(255, 255, 13)
+    }
 
 .bombo h1{
     margin: 3%;
@@ -96,7 +134,7 @@ nav a:hover{
 
 
 .row p{
-    color: rgb(1, 1, 51);
+    color: rgb(168, 168, 201);
     margin-top: 40px;
     font-size: 18px;
     font-family: Arial
@@ -107,7 +145,7 @@ nav a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
-    box-shadow: 3px 2px 16px 1px rgb(29, 12, 179);
+    box-shadow: 3px 2px 16px 1px rgba(255, 251, 45, 0.664);
 }
 
 
@@ -363,6 +401,65 @@ table td::before{
 }
 }
 
+
+
+.curiosidades{
+    display: grid;
+    background-color: rgb(2, 2, 61);
+    margin:auto
+    grid-template-columns (2, 1fr);
+    gap: 15px;
+    grid-template-rows: 1fr;
+    text-align: center;
+    grid-template-areas: 
+    "titulo titulo"
+    "pcuri1 pcuri2"
+    "pcuri3 pcuri3";
+}
+
+.titulocuri{
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px rgb(239, 255, 8)  ;
+    overflow: hidden;
+    grid-area: titulo;
+}
+
+.parrafocuri1{
+    grid-area: pcuri1;
+}
+.parrafocuri2{
+    grid-area: pcuri2;
+}
+.parrafocuri3{
+    grid-area: pcuri3;
+}
+.parrafocuri3 img{
+    margin-top: 20px;
+    height: 500px;
+    width: 900px;
+    box-shadow: 5px 5px 10px rgba(239, 255, 8)
+}
+.titulocuri img{
+    margin-top: 10px;
+    height: 200px;
+
+}
+.curiosidades h1{
+    color: rgb(31, 35, 255);
+    font-family: cursive; 
+}
+
+.curiosidades p{
+    color: aliceblue;
+    font-size: 19px;
+
+}
+
+
+
+
+
 .wrapper{
     padding: 125px 15px 15px 15px;
     display: flex;
@@ -459,6 +556,7 @@ transform: translate(0,0);
 }
 
 @media (max-width: 900px){
+
     .wrapper{
         padding: 0;
         margin-top: 18px;
