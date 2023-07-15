@@ -253,7 +253,18 @@ img{
 
 
 
-
+@media screen and (max-width:425px) {
+    .columna img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 300px;
+        object-fit: cover;
+        box-shadow: 5px 5px 5px rgba(239, 255, 8)
+        
+    }
+    }
 
 
 
@@ -268,18 +279,28 @@ footer{
     background-color: rgb(4, 1, 39);
 }
 
-.footer-menu-container{
+.social-icons-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-}
-
-.footer-menu-container{
     list-style-type: none;
     color: rgb(12, 36, 177);
     font-size: 18px;
+}
+
+.social-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    color: yellow;
+    
 }
 
 .menu-item{
@@ -432,57 +453,6 @@ table td::before{
     font-size: 19px;
 
 }
-
-@media screen and (max-width:600px){
-    .parrafocuri1{
-        width: 100px;
-    }
-    .titulocuri img{
-        width: 50px;
-    }
-
-    .curiosidades{
-        width: 100px;
-        margin: auto;
-        background-color: aqua;
-    }
-}
-
-@media screen and (max-width:425px) {
-.columna img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    width: 300px;
-    object-fit: cover;
-    box-shadow: 5px 5px 5px rgba(239, 255, 8)
-    
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .wrapper{
